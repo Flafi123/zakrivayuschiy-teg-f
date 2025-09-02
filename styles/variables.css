@@ -1,1 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --bacis-font-family: 'Inter-Variable';
+    --accent-font-family: 'PressStart2P';
+    --counter_color: #000;
+    --animation-fill-color: #FF0000;
+    --text-wight: 410;
+    --title-wight: 715;
+}
