@@ -24,7 +24,7 @@
 }
 
 .header {
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), sans-serif;
   font-weight: 400;
   text-align: center;
   background-color: rgb(255, 255, 255);
@@ -72,13 +72,15 @@
 }
 
 .label {
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), sans-serif;
   font-size: 14px;
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 0px;
+  right: 0px;
+  padding: 25px;
   color: rgba(0, 0, 0,0.5);
   -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.5);
+  z-index: 1;
 }
 
 @supports (text-stroke: 0.5px rgba(255, 255, 255, 0.5)) {
@@ -155,6 +157,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 0px;
 }
 
 .card__like-button {
@@ -162,7 +165,7 @@
   background-color: transparent;
   cursor: pointer;
   padding: 8px 0;  
-  width: 118px;
+  width: 130px;
 }
 
 .button__text {
@@ -210,7 +213,7 @@
 }
 
 .dialog_text {
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-align: left;
@@ -245,6 +248,10 @@ dialog[open] {
 .dialog_svg {
   width: 39px;
   height: 39px;
+}
+
+.button__text_close {
+  text-transform: uppercase;
 }
 
 .header__menu-button_cmd_close {
@@ -299,6 +306,10 @@ dialog[open] {
 
 .contour {
   transition: fill 0.1s linear;
+}
+
+.core, .main-body {
+  fill: transparent;
 }
 
 .core {
